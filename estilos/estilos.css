@@ -1,0 +1,85 @@
+h1{
+    position: relative;
+    text-align: center;
+    margin-top: 1em;
+}
+#conference{
+    margin: 1em 3%;
+}
+fieldset{
+    background-color: #e4dccf;
+    border-radius: .8em;
+    margin: 1.5em 0;
+    border: #917a56 solid 1px;
+}
+legend{
+    color: #7d2a35;
+    margin-left: 6%;
+    padding: .5em;
+    border: #917a56 solid 1px;
+    background-color: #F2EEE7;
+    border-radius: .4em;
+}
+label{
+    margin: .5em;
+    display: block;
+}
+label span{
+    display: block;
+    font-size: .8em;
+    color: #917a56;
+    padding-top: .9em;
+    padding-bottom: .2em;
+}
+.submitBtn{
+    -webkit-appearance: none;
+    color: #FFF;
+    border: solid 1px #111;
+    border-radius: 7px;
+    width: 50%;
+    margin: .5em 0;
+    font-size: 1em;
+    padding: .6em;
+    background-color: #7D2A35;
+    box-shadow: 4px 4px 10px #666;
+    margin: auto;
+    display: block;
+}
+
+/*VALIDATIONS*/
+label input{
+    background-color: #f4f2ef;
+    color: #917A56;
+    padding: .3em .3em .3em 2em;
+    border: solid 1px #B8AAA0;
+    border-radius: 5px;
+    font-size: .9em;
+    width: 90%;
+    max-width: 500px;
+    /*background-image: url('ok.png');
+    background-repeat: no-repeat;
+    background-position: 4px -11px;*/
+}
+/*input seleccionado*/
+input:focus{
+    box-shadow: 1px 1px 4px rgba(0,0,0,0.5) inset;
+}
+/*Identifica los text required*/
+input:required{
+    background-image: url('require.png');
+    background-repeat: no-repeat;
+    background-position: 4px;
+    background-size: 12px 12px;
+}
+input:focus:invalid{
+    background-image: url('oval.png');
+    background-repeat: no-repeat;
+    background-position: 8px;
+    background-size: 12px 12px;
+}
+input:required:valid{
+    background-image: url('ok.png');
+    background-repeat: no-repeat;
+    background-position: 8px;
+    background-size: 12px 12px;
+}
